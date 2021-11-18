@@ -38,14 +38,12 @@
 		@enderror
 	</div>
 
-	<div class="mb-3">
-		<img src="{{ asset('/storage/images/' . $post->image) }}" class="card-img" /> 
-
-		@error('image')
-			<p class="text-danger">{{ $message }}</p>
-		@enderror
+	<div class="row mb-3">
+		<div class="col-6">
+			<img src="{{ asset('/storage/images/' . $post->image) }}" class="card-img" /> 
+		</div>
 	</div>
-
+	
 	<div class="mb-3">
 		<input name="image" type="file" class="form-control" />
 
