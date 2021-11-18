@@ -11,7 +11,7 @@ use App\Models\Category;
 
 class PostController extends Controller
 {
-	const LOCAL_STORAGE 	= 'public/images/';
+	const LOCAL_STORAGE = 'public/images/';
 
 	/**
      * The Post model instance.
@@ -155,7 +155,7 @@ class PostController extends Controller
 
 		$this->categoryPost->insert($categories);
 
-		return redirect()->route('index');
+		return redirect()->route('post.show', $id);
 	}
 
 	/**
